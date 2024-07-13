@@ -8,6 +8,7 @@ namespace Domain.Entities
 {
     public class Associate : User
     {
-        public bool Active { get; set; }
+        public DateTime LastPay {  get; set; }
+        public ICollection<Class> ClassInscripted { get; set; } = new List<Class>();
     }
 }

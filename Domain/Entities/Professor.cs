@@ -8,6 +8,7 @@ namespace Domain.Entities
 {
     public class Professor : User
     {
+        public ICollection<Class> Class {  get; set; } = new List<Class> (); 
         
     }
 }
