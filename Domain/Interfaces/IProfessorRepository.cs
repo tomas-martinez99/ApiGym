@@ -9,7 +9,7 @@ namespace Domain.Interfaces
 {
     public interface IProfessorRepository
     {
-        Professor GetById(int id);
+        Professor? GetById(int id);
         IEnumerable<Professor> GetAll();
         void Add (Professor professor);
         void Update (Professor professor);
