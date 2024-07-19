@@ -21,11 +21,6 @@ namespace Presentation.Controllers
             return Ok(_userService.Get(name));
 
         }
-
-        [HttpGet]
-        public IActionResult GetAll()
-        {
-            return Ok(_userService.GetAll());
-        }
+      
     }
 }
